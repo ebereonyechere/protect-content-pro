@@ -1,0 +1,33 @@
+{
+  "name": "mono-wp/protect-content-pro",
+  "description": "a wordpress plugin",
+  "type": "library",
+  "license": "GPLV2",
+  "authors": [
+    {
+      "name": "Mono WP",
+      "email": "support@monowp.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "typisttech/imposter-plugin": "0.6.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mono_WP\\Protect_Content_Pro\\": "./"
+    }
+  },
+  "extra": {
+    "imposter": {
+      "namespace": "Mono_WP\\Protect_Content_Pro\\Vendor",
+      "excludes": [
+      ]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "typisttech/imposter-plugin": true
+    }
+  }
+}
